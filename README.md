@@ -3,7 +3,7 @@
 <code><img height="50" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/php/php.png"></code>
 <code><img height="50" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png"></code>
 
-This API aims to present a brief to consume an API resources, mainly for students in the early years of Computer Science courses and the like. For this reason, it has few EndPoints to use, and can be expanded according to the need.
+Esta API tem como objetivo apresentar um breve guia para consumir recursos de uma API, principalmente para estudantes nos primeiros anos de cursos de Ciência da Computação e similares. Por essa razão, possui poucos EndPoints para uso e pode ser expandida de acordo com a necessidade.
 
 The API have two features: "**USER**" and "**TASK**". The aim is that a user can register their to-do list, performing basic data manipulation on both resources. As a bonus, the API allows, after creating the user, sending an image to the user's profile.
 
