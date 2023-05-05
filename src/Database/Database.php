@@ -21,9 +21,9 @@ class Database
     # PDO config vars
     private static string $db_type = 'mysql';
     private static string $db_hostname = 'localhost';
-    private static string $db_name = 'api';
-    private static string $db_user = 'admin';
-    private static string $db_password = 'admin';
+    private static string $db_name = 'todolistls';
+    private static string $db_user = 'todolistuser';
+    private static string $db_password = 'nbJichnm7lU=';
 
     # Constructor
     /**
