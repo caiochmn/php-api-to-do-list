@@ -67,7 +67,3 @@ composer install
 
 # Atualiza as informações de configuração do banco de dados no arquivo Database.php
 sed -i "s/db_name = 'api'/db_name = 'todolistls'/g; s/db_user = 'admin'/db_user = 'todolistuser'/g; s/db_password = 'admin'/db_password = 'nbJichnm7lU='/g"  /var/www/html/php-api-to-do-list/src/Database/Database.php
-
-
-docker run -d -p 3306:3306  -p 8080:80 -e MYSQL_ROOT_PASSWORD=nbJichnm7lU= -e MYSQL_DATABASE=todolistls -e MYSQL_USER=todolistuser -e MYSQL_PASSWORD=nbJichnm7lU= php-api-to-do-list
-

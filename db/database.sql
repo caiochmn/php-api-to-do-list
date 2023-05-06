@@ -1,5 +1,3 @@
-USE todolistls;
-
 CREATE DATABASE IF NOT EXISTS todolistls;
 USE todolistls;
 CREATE TABLE IF NOT EXISTS users (
@@ -21,5 +19,5 @@ CREATE TABLE IF NOT EXISTS tasks (
         REFERENCES users(id)
         ON DELETE CASCADE
 );
-CREATE USER 'todolistuser'@'localhost' IDENTIFIED BY 'nbJichnm7lU=';
-GRANT ALL PRIVILEGES ON todolistls.* TO 'todolistuser'@'localhost';
+CREATE USER 'todolistuser'@'%' IDENTIFIED BY 'nbJichnm7lU=';
+GRANT ALL PRIVILEGES ON todolistls.* TO 'todolistuser'@'%';

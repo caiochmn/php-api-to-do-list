@@ -1,0 +1,50 @@
+version: "3"
+services:
+  php:
+    build: .docker/php
+    container_name: "apache-srv"
+    image: php-api-to-do-list
+    volumes:
+      - ./php-api-to-do-list:/var/www/html/php-api-to-do-list
+      
+    ports:
+      - 8080:80
+#      - 443:443
+    restart: always
+    networks:
+      - mynetwork
+
+  mysql:
+    image: mysql:5.7
+    container_name: "mysql-srv"
+    volumes:
+      - .docker/db:/var/lib/mysql
+      - ./db/:/docker-entrypoint-initdb.d/
+    ports:
+      - 3305:3306
+    environment:
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: nbJichnm7lU=
+      MYSQL_ROOT_PASSWORD: nbJichnm7lU=
+    restart: always
+    networks:
+      - mynetwork
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: "phpmyadmin-srv"
+    ports:
+      - 8081:80
+    environment:
+      - PMA_ARBITRARY=1
+      - PMA_HOST=mysql
+ 
+    links:
+      - mysql
+    restart: always
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
+    driver: bridge

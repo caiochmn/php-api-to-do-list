@@ -20,7 +20,7 @@ class Database
 
     # PDO config vars
     private static string $db_type = 'mysql';
-    private static string $db_hostname = 'localhost';
+    private static string $db_hostname = 'mysql';
     private static string $db_name = 'todolistls';
     private static string $db_user = 'todolistuser';
     private static string $db_password = 'nbJichnm7lU=';
