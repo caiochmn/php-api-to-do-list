@@ -18,7 +18,7 @@ services:
     image: mysql:5.7
     container_name: "mysql-srv"
     volumes:
-      - .docker/db:/var/lib/mysql
+      - .docker/mysql:/var/lib/mysql
       - ./db/:/docker-entrypoint-initdb.d/
     ports:
       - 3305:3306
