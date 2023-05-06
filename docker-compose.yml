@@ -3,7 +3,7 @@ services:
   php:
     build: .docker/php
     container_name: "apache-srv"
-    image: php-api-to-do-list
+    image: caiochmn/php-api-to-do-list
     volumes:
       - ./php-api-to-do-list:/var/www/html/php-api-to-do-list
       
