@@ -24,8 +24,8 @@ services:
       - 3305:3306
     environment:
       MYSQL_USER: admin
-      MYSQL_PASSWORD: nbJichnm7lU=
-      MYSQL_ROOT_PASSWORD: nbJichnm7lU=
+      MYSQL_PASSWORD: 302010
+      MYSQL_ROOT_PASSWORD: 302010
     restart: always
     networks:
       - mynetwork

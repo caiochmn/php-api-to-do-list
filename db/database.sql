@@ -19,5 +19,5 @@ CREATE TABLE IF NOT EXISTS tasks (
         REFERENCES users(id)
         ON DELETE CASCADE
 );
-CREATE USER 'todolistuser'@'%' IDENTIFIED BY 'nbJichnm7lU=';
+CREATE USER 'todolistuser'@'%' IDENTIFIED BY '302010';
 GRANT ALL PRIVILEGES ON todolistls.* TO 'todolistuser'@'%';
