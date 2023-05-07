@@ -4,7 +4,60 @@
 <code><img height="50" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png"></code>
 
 
-Esta API tem como objetivo apresentar um breve guia para consumir recursos de uma API, principalmente para estudantes nos primeiros anos de cursos de Ciência da Computação e similares. Por essa razão, possui poucos EndPoints para uso e pode ser expandida de acordo com a necessidade.
+Essa API tem como objetivo entrega do trabalho proposta pelo professor Edson
+
+Para testar baixr o executavel no endereço https://github.com/caiochmn/php-api-to-do-list/raw/main/app_windows/app_windows.zip
+Ou acesse  a pasta app_windows no repositorio
+
+Descompacte e execute  o aplicativo
+-------------------------------------------------
+Demo API 
+http://php-api.duckdns.org/api/
+
+--------------------------------------------------
+Aplicacação windows foi desenvolvida utilizando flutter aproveitando o repositorio do Wiilian
+Atulizado todo sdk e plugins para a aplicação rodar corretamente
+https://github.com/caiochmn/flutter_to_do_list
+
+------------------------------------------------------
+
+Fizemos a instalação do phpmyadmin para acompanhar a gravaçao no banco
+Um demo esta rodando no endereço https://myapiphp.duckdns.org/
+
+-----------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+#Como diferencial  e melhorias fizemos algumas melhorias 
+
+--- Criando um script de instalação no linux install.sh, que confira, instala a api com todo o todo o suporte para rodar no servidor
+
+-- Conterizamos a aplicação para rodar em docker
+Buidamos uma imagem com apache, php e composer para rodar a api em docker 
+A imagem pode ser baixada do endereço https://hub.docker.com/repository/docker/caiochmn/php-api-to-do-list/general
+
+--------------------------------------------------------
+Criado arquivo Dockerfiler para buildar uma imagem docker 
+
+--------------------------------------------------------
+Criado arquivo docker-composer para fazer toda a instalação e configraçã oda imagem criada e rodar aplicaçã ocom Apache, PHP, Mysql e Phpmyadmin em docker
+
+-------------------------------------------------------
+
+criado dominio e instalador certificado SSL para melhorar a segurança da API
+
+--------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
 
 A API possui duas funcionalidades: "USUÁRIO" e "TAREFA". O objetivo é que um usuário possa registrar sua lista de tarefas, realizando manipulação básica de dados em ambos os recursos. Como um bônus, a API permite, após a criação do usuário, o envio de uma imagem para o perfil do usuário.
 
